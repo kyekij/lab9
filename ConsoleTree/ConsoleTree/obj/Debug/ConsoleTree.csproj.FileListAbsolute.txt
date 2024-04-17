@@ -6,3 +6,11 @@ C:\Users\andre\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.csproj
 C:\Users\andre\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.exe
 C:\Users\andre\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.pdb
+C:\Users\Madha\Desktop\lab9\ConsoleTree\ConsoleTree\bin\Debug\ConsoleTree.exe.config
+C:\Users\Madha\Desktop\lab9\ConsoleTree\ConsoleTree\bin\Debug\ConsoleTree.exe
+C:\Users\Madha\Desktop\lab9\ConsoleTree\ConsoleTree\bin\Debug\ConsoleTree.pdb
+C:\Users\Madha\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.csproj.AssemblyReference.cache
+C:\Users\Madha\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.csproj.SuggestedBindingRedirects.cache
+C:\Users\Madha\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.csproj.CoreCompileInputs.cache
+C:\Users\Madha\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.exe
+C:\Users\Madha\Desktop\lab9\ConsoleTree\ConsoleTree\obj\Debug\ConsoleTree.pdb
