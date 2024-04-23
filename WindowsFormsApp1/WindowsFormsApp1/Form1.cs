@@ -13,9 +13,9 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        private Subject _subject = new Subject();
-        private TimeObserver _timeObserver;
-        private CountObserver _countObserver;
+        public Subject _subject = new Subject();
+        public TimeObserver _timeObserver;
+        public CountObserver _countObserver;
         public Form1()
         {
             InitializeComponent();
@@ -27,12 +27,12 @@ namespace WindowsFormsApp1
             _subject.Attach(_countObserver);
         }
 
-        private void btnSetState_Click(object sender, EventArgs e)
+        public void btnSetState_Click(object sender, EventArgs e)
         {
             _subject.SetState("Some State");
         }
 
-        private void CheckBox_CheckedChanged(object sender, EventArgs e)
+        public void CheckBox_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox checkBox = (CheckBox)sender;
 
