@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -148,6 +149,11 @@ namespace WindowsFormsApp1
         {
             _state = state;
             Notify();
+        }
+
+        public ICollection GetObservers()
+        {
+            throw new NotImplementedException();
         }
     }
 
