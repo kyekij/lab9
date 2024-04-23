@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WindowsFormsApp1;
 using System.Windows;
+=======
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Windows.Forms;
+using WindowsFormsApp1;
+>>>>>>> ec04358794a17d8f8ed68375d27d2bdb0c19dc90
 
 namespace UnitTestProject1
 {
@@ -9,12 +16,15 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
+<<<<<<< HEAD
         public void TestMethod1()
         {
         }
 
 
         [TestMethod]
+=======
+>>>>>>> ec04358794a17d8f8ed68375d27d2bdb0c19dc90
         public void Subject_SetState_StateIsSet()
         {
             // Arrange
@@ -35,10 +45,16 @@ namespace UnitTestProject1
             var outputTextBox = new System.Windows.Forms.TextBox();
             var timeObserver = new TimeObserver(subject, outputTextBox);
             timeObserver.SetStartTime();
+<<<<<<< HEAD
+=======
+
+            // Act
+>>>>>>> ec04358794a17d8f8ed68375d27d2bdb0c19dc90
             System.Threading.Thread.Sleep(1000); // Simulate time passing
             timeObserver.Update();
 
             // Assert
+<<<<<<< HEAD
             Assert.IsTrue(outputTextBox.Text.Contains("TimeObserver: Elapsed time since state change:"));
         }
 
@@ -69,6 +85,31 @@ namespace UnitTestProject1
 
         [TestMethod]
 
+=======
+            Assert.IsTrue(outputTextBox.Text.Contains("Elapsed time since state change: 1 seconds"));
+        }
+
+        [TestMethod]
+        public void TestSubjectNotify()
+        {
+            Subject subject = new Subject();
+            TextBox outputTextBox = new TextBox();
+            TimeObserver timeObserver = new TimeObserver(subject, outputTextBox);
+            CountObserver countObserver = new CountObserver(subject, outputTextBox);
+
+            subject.Attach(timeObserver);
+            subject.Attach(countObserver);
+
+            subject.SetState("Some State");
+
+            // Assert that the outputTextBox contains the expected text
+            string expectedText = "TimeObserver: Elapsed time since state change: 0 seconds\n" +
+                                  "CountObserver: Found state 'Some State'. Count: 1\n";
+            Assert.AreEqual(expectedText, outputTextBox.Text);
+        }
+
+        [TestMethod]
+>>>>>>> ec04358794a17d8f8ed68375d27d2bdb0c19dc90
         public void Subject_NotifyObservers_ObserversNotified()
         {
             // Arrange
