@@ -1,0 +1,6 @@
+C:\Users\andre\Desktop\lab9\WFlab11\WFlab11\obj\Debug\WFlab11.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\lab9\WFlab11\WFlab11\obj\Debug\WFlab11.csproj.SuggestedBindingRedirects.cache
+C:\Users\andre\Desktop\lab9\WFlab11\WFlab11\obj\Debug\WFlab11.MainForm.resources
+C:\Users\andre\Desktop\lab9\WFlab11\WFlab11\obj\Debug\WFlab11.Properties.Resources.resources
+C:\Users\andre\Desktop\lab9\WFlab11\WFlab11\obj\Debug\WFlab11.csproj.GenerateResource.cache
+C:\Users\andre\Desktop\lab9\WFlab11\WFlab11\obj\Debug\WFlab11.csproj.CoreCompileInputs.cache

@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConsoleTree;
 
 namespace ConsoleTree
 {
@@ -16,12 +12,27 @@ namespace ConsoleTree
 
             public Node(string name)
             {
+                if (string.IsNullOrWhiteSpace(name))
+                {
+                    throw new ArgumentException("Node name cannot be empty or whitespace", nameof(name));
+                }
+
                 Name = name;
                 Children = new List<Node>();
             }
 
             public void AddChild(Node child)
             {
+                if (child == null)
+                {
+                    throw new ArgumentNullException("Child node cannot be null");
+                }
+
+                if (Children.Contains(child))
+                {
+                    throw new InvalidOperationException("Child node already exists in the children list");
+                }
+
                 Children.Add(child);
             }
         }
@@ -32,6 +43,11 @@ namespace ConsoleTree
 
             public Leaf(string name)
             {
+                if (string.IsNullOrWhiteSpace(name))
+                {
+                    throw new ArgumentException("Leaf name cannot be empty or whitespace", nameof(name));
+                }
+
                 Name = name;
             }
         }
